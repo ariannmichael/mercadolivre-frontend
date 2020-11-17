@@ -1,6 +1,7 @@
 import React from 'react'
-import { Container, Row, Panel, Column, Gallery, Section, Description } from './style'
+import { Container, Row, Panel, Column, Gallery, Section, Description } from './styles'
 import tShirtImage from '../../assets/tshirt.png';
+import SellerInfo from '../SellerInfo';
 
 const Product = () => {
     return (
@@ -14,12 +15,12 @@ const Product = () => {
                 <Column>
                     <Gallery>
                         <img src={tShirtImage} alt="T-shirt"/>
-                        <Info/>
                     </Gallery>
+                    <Info/>
                 </Column>
                 <Column>
-                    {/* <ProductAction/>
-                    <SellerInfo/> */}
+                    {/* <ProductActioxn/> */}
+                    <SellerInfo/>
 
                     <WarrantySection/>
                     <WarrantySection/>
@@ -44,6 +45,8 @@ const WarrantySection = () => (
                 <p className="description">Sem garantia</p>
             </span>
         </div>
+
+        <a href="#">Saiba mais sobre garantia</a>
     </Section>
 );
 
